@@ -8,3 +8,6 @@ Similar to facebook's placeholder animation
   gem install compass
   compass watch
 ```
+## Sample
+
+![sample](https://raw.github.com/tulios/placeholder_shimmer/master/sample.gif)
