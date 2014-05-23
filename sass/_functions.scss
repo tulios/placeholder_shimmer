@@ -1,0 +1,68 @@
+@mixin keyframes($name) {
+  @-webkit-keyframes $name {
+    @content;
+  }
+  @-moz-keyframes $name {
+    @content;
+  }
+  @-ms-keyframes $name {
+    @content;
+  }
+  @-o-keyframes $name {
+    @content;
+  }
+  @keyframes $name {
+    @content;
+  }
+}
+
+@mixin prefixer($prop, $val) {
+  -webkit-#{$prop}: $val;
+  -moz-#{$prop}: $val;
+  -ms-#{$prop}: $val;
+  -o-#{$prop}: $val;
+  #{$prop}: $val;
+}
+
+@mixin animation-name($name) {
+  @include prefixer(animation-name, $name);
+}
+
+@mixin animation-duration($duration) {
+  @include prefixer(animation-duration, $duration);
+}
+
+@mixin animation-fill-mode($fillMode) {
+  @include prefixer(animation-fill-mode, $fillMode);
+}
+
+@mixin animation-iteration-count($iterationCount) {
+  @include prefixer(animation-iteration-count, $iterationCount);
+}
+
+@mixin animation-timing-function($timingFunction) {
+  @include prefixer(animation-timing-function, $timingFunction);
+}
+
+@mixin animation-direction($direction) {
+  @include prefixer(animation-direction, $direction);
+}
+
+@mixin placeholder-shimmer-keyframes {
+  @include keyframes(placeholder-shimmer) {
+    0% {
+      background-position: -468px 0;
+    }
+    100% {
+      background-position : 468px 0;
+    }
+  }
+}
+
+@mixin placeholder-shimmer-animation {
+  @include animation-name(placeholder-shimmer);
+  @include animation-duration(1s);
+  @include animation-fill-mode(forwards);
+  @include animation-iteration-count(infinite);
+  @include animation-timing-function(linear);
+}

@@ -1,0 +1,54 @@
+@import "compass";
+@import "_functions";
+
+@include placeholder-shimmer-keyframes;
+
+.placeholder-item {
+  @include placeholder-shimmer-animation;
+
+  background: #f6f7f8;
+  @include background-image(linear-gradient(left, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%));
+
+  background-repeat: no-repeat;
+  background-size: 800px 200px;
+  height: 104px;
+  position: relative;
+
+  overflow: hidden;
+}
+
+body {
+  background-color: #e9eaed;
+  text-align: center;
+}
+
+.placeholder {
+  display: inline-block;
+  box-sizing: border-box;
+
+  background-color: #fff;
+  border: 1px solid;
+  border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+
+  width: 500px;
+  height: 380px;
+  text-align: left;
+}
+
+.placeholder .picture {
+  width: 300px;
+  height: 200px;
+  margin: 20px 0 0 20px;
+}
+
+.element.placeholder .line1,
+.element.placeholder .line2 {
+  display: inline-block;
+  width: 460px;
+  height: 20px;
+  margin: 10px 0 0 20px;
+}
+
+.element.placeholder .line2 {
+  width: 230px;
+}
