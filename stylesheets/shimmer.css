@@ -1,0 +1,138 @@
+@-webkit-keyframes placeholder-shimmer {
+  /* line 53, ../sass/_functions.scss */
+  0% {
+    background-position: -468px 0;
+  }
+
+  /* line 56, ../sass/_functions.scss */
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+@-moz-keyframes placeholder-shimmer {
+  /* line 53, ../sass/_functions.scss */
+  0% {
+    background-position: -468px 0;
+  }
+
+  /* line 56, ../sass/_functions.scss */
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+@-ms-keyframes placeholder-shimmer {
+  /* line 53, ../sass/_functions.scss */
+  0% {
+    background-position: -468px 0;
+  }
+
+  /* line 56, ../sass/_functions.scss */
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+@-o-keyframes placeholder-shimmer {
+  /* line 53, ../sass/_functions.scss */
+  0% {
+    background-position: -468px 0;
+  }
+
+  /* line 56, ../sass/_functions.scss */
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+@keyframes placeholder-shimmer {
+  /* line 53, ../sass/_functions.scss */
+  0% {
+    background-position: -468px 0;
+  }
+
+  /* line 56, ../sass/_functions.scss */
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+/* line 6, ../sass/shimmer.scss */
+.placeholder-item {
+  -webkit-animation-name: placeholder-shimmer;
+  -moz-animation-name: placeholder-shimmer;
+  -ms-animation-name: placeholder-shimmer;
+  -o-animation-name: placeholder-shimmer;
+  animation-name: placeholder-shimmer;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+  background: #f6f7f8;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #f6f7f8), color-stop(20%, #edeef1), color-stop(40%, #f6f7f8), color-stop(100%, #f6f7f8));
+  background-image: -webkit-linear-gradient(left, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+  background-image: -moz-linear-gradient(left, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+  background-image: -o-linear-gradient(left, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+  background-image: linear-gradient(left, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+  background-repeat: no-repeat;
+  background-size: 800px 200px;
+  height: 104px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 20, ../sass/shimmer.scss */
+body {
+  background-color: #e9eaed;
+  text-align: center;
+}
+
+/* line 25, ../sass/shimmer.scss */
+.placeholder {
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid;
+  border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+  width: 500px;
+  height: 380px;
+  text-align: left;
+}
+
+/* line 38, ../sass/shimmer.scss */
+.placeholder .picture {
+  width: 300px;
+  height: 200px;
+  margin: 20px 0 0 20px;
+}
+
+/* line 45, ../sass/shimmer.scss */
+.element.placeholder .line1,
+.element.placeholder .line2 {
+  display: inline-block;
+  width: 460px;
+  height: 20px;
+  margin: 10px 0 0 20px;
+}
+
+/* line 52, ../sass/shimmer.scss */
+.element.placeholder .line2 {
+  width: 230px;
+}
